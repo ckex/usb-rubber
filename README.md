@@ -11,7 +11,7 @@ learning DuckyScript so this repository will hold my payloads
 | Payloads                                                                                                         | Description                                                                                       | Plug'n'Play | Author      |
 | :--------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------ | :-----------| :-----------|
 | [SimpleScript](https://github.com/Kexx0/usb-rubber/tree/main/SimpleScript)                                             | Automatically downloads an exe file and runs it                                                   |✅          | kex    |
-| [SysInfoEXFIL]()                              | Grabs system information and exfiltrates to Dropbox                                                |✅          | kex    |
+| [SysInfoEXFIL](https://github.com/Kexx0/usb-rubber/tree/main/SysInfoEXFIL)                              | Grabs system information and exfiltrates to Dropbox                                                |✅          | kex    |
 
 
 ## Acknowledgments
