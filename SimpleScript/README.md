@@ -1,6 +1,7 @@
 # SimpleScript - BADUSB ✅
 
 A script used to download and execute an exe file
+\
 **Category**:  Execution
 
 ## Description
