@@ -1,4 +1,4 @@
-### second project
+REM second project
 ### Type: basic EXFIL / POWERSHELL SCRIPT 
 ### not for badUSB use
 ### Detail: Gathers network info/processes then EXFIL to dropbox. (revers shell)
