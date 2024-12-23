@@ -1,7 +1,7 @@
 REM Author:      kex 
-REM Title:       SysInfoEXFIL
+REM Title:       SysInfoRecon
 REM Target:      Windows 10 (11 untested) 
-REM Description: Grabs system info and process list and exfiltrate to dropbox
+REM Description: Grabs system info, process list, SSID and Wifi Passwords, and a tree list of C Drive then exfiltrates to DropBox
 
 DEFINE #LINK your-direct-link
 
