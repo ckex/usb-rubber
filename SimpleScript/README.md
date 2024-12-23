@@ -5,7 +5,7 @@ A script used to download and execute an exe file
 
 ## Description
 
-Opens a hidden shell, downloads an exe files and execute
+Opens a hidden shell, downloads an exe file and execute
 
 ### Dependencies
 
