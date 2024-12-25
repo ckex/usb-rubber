@@ -18,7 +18,7 @@ foreach ($profile in $wifiProfiles) {
     Add-Content -Path $outputFile -Value "`nProfile: $profile`n$wifiDetails`n"
 }
 
-          REM Creating Tree List  *FIX*
+          REM Creating Tree List  *not working*
 
           Add-Content -Path $outputFile -Value "`n===== File Tree of C:\ =====`n"
           Get-ChildItem -Path "C:\" -Recurse -Force | ForEach-Object {
