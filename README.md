@@ -6,7 +6,7 @@
  
 
 ## Description 
-learning DuckyScript so this repository will hold my payloads
+learning DuckyScript/powershell so this repository will hold my payloads
 
 | Payloads                                                                                                         | Description                                                                                       | Plug'n'Play | Author      |
 | :--------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------ | :-----------| :-----------|
